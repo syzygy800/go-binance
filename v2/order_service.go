@@ -532,6 +532,8 @@ type Order struct {
 	IsWorking                bool            `json:"isWorking"`
 	IsIsolated               bool            `json:"isIsolated"`
 	OrigQuoteOrderQuantity   string          `json:"origQuoteOrderQty"`
+	StrategyId               int64           `json:"strategyId"`
+	StrategyType             int64           `json:"strategyType"`
 }
 
 // ListOrdersService all account orders; active, canceled, or filled
